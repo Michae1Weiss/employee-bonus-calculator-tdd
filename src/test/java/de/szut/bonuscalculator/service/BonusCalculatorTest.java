@@ -77,11 +77,11 @@ class BonusCalculatorTest {
         // Grundbonus: 500
         // Seniority: (10 * 10) + (5 * 20) = 100 + 100 = 200
         // Project: 20 * 10 = 200
-        // TeamLeader: 15 * 20 = 300
+        // TeamLeader: 20 = 20
         // SickDayBonus: 10 (0-5 Tage)
         // SickDayDeduction: 0
-        // Zwischensumme: 1210
-        // PerformanceMultiplier: 1210 * 1.1 = 1331
+        // Zwischensumme: 930
+        // PerformanceMultiplier: 930 * 1.1 = 1023
         // Über Maximum von 1000, also sollte 1000 zurückgegeben werden
 
         assertThat(bonus).isEqualTo(1000.0);
