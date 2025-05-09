@@ -8,6 +8,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.anyDouble;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -22,8 +23,10 @@ class BonusCalculatorTest {
     @Test
     void shouldCalculateTotalBonusRespectingMinimumLimit() {
         // Given
-        when(bonusService.applyRestrictions()).thenReturn(100.0);
-        when(bonusService.getMaximumBonus()).thenReturn(5000.0);
+        when(bonusService.applyRestrictions(anyDouble())).thenAnswer(invocation -> {
+            double bonus = invocation.getArgument(0);
+            return Math.max(10.0, Math.min(1000.0, bonus));
+        });
 
         Employee employee = Employee.builder()
                 .name("Max Mustermann")
@@ -46,7 +49,6 @@ class BonusCalculatorTest {
         // SickDayDeduction: 0
         // Zwischensumme: 540
         // PerformanceMultiplier: 540 * 0.5 = 270
-        // Aber unter Minimum von 100, also sollte 100 zurückgegeben werden
 
         assertThat(bonus).isEqualTo(270.0); // Über Minimum, daher kein Einfluss
     }
@@ -54,8 +56,10 @@ class BonusCalculatorTest {
     @Test
     void shouldCalculateTotalBonusRespectingMaximumLimit() {
         // Given
-        when(bonusService.getMinimumBonus()).thenReturn(100.0);
-        when(bonusService.getMaximumBonus()).thenReturn(1000.0);
+        when(bonusService.applyRestrictions(anyDouble())).thenAnswer(invocation -> {
+            double bonus = invocation.getArgument(0);
+            return Math.max(10.0, Math.min(1000.0, bonus));
+        });
 
         Employee employee = Employee.builder()
                 .name("Anna Schmidt")
