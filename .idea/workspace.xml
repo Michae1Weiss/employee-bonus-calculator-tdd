@@ -56,7 +56,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BonusCalculatorTest">
+  <component name="RunManager" selected="JUnit.BonusServiceTest">
     <configuration name="BonusCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
@@ -67,6 +67,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.service" />
       <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.service.BonusCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BonusServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employee-bonus-calculator-tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.szut.bonuscalculator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.service" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.service.BonusServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,28 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamLeaderBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employee-bonus-calculator-tdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.TeamLeaderBonusTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BonusServiceTest" />
         <item itemvalue="JUnit.BonusCalculatorTest" />
         <item itemvalue="JUnit.PerformanceBonusTest" />
         <item itemvalue="JUnit.SickDayDeductionTest" />
         <item itemvalue="JUnit.SickDayBonusTest" />
-        <item itemvalue="JUnit.TeamLeaderBonusTest" />
       </list>
     </recent_temporary>
   </component>
