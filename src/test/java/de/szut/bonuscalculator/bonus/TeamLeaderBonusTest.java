@@ -14,16 +14,14 @@ public class TeamLeaderBonusTest {
 
         Bonus decorator = new TeamLeaderBonus(wrappedComponent);
 
-        // Fall 1: Teamleiter mit 5 Jahren
+        // Fall 1: Teamleiter
         Employee teamLeader = Employee.builder()
                 .isTeamLeader(true)
-                .yearsOfService(5)
                 .build();
 
         // Fall 2: Kein Teamleiter
         Employee nonTeamLeader = Employee.builder()
                 .isTeamLeader(false)
-                .yearsOfService(5)
                 .build();
 
         // When
@@ -31,7 +29,7 @@ public class TeamLeaderBonusTest {
         double bonusNonTeamLeader = decorator.calculateBonus(nonTeamLeader);
 
         // Then
-        assertThat(bonusTeamLeader).isEqualTo(600.0); // 500 + (5 * 20)
+        assertThat(bonusTeamLeader).isEqualTo(520.0); // 500 + 20
         assertThat(bonusNonTeamLeader).isEqualTo(500.0); // unverändert
 
         verify(wrappedComponent, times(2)).calculateBonus(any(Employee.class));
