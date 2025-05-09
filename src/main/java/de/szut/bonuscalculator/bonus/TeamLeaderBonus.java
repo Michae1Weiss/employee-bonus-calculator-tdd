@@ -3,7 +3,7 @@ package de.szut.bonuscalculator.bonus;
 import de.szut.bonuscalculator.model.Employee;
 
 public class TeamLeaderBonus extends BonusDecorator {
-    private static final double BONUS_PER_YEAR = 20.0;
+    private static final double BONUS = 20.0;
 
     protected TeamLeaderBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
@@ -13,7 +13,10 @@ public class TeamLeaderBonus extends BonusDecorator {
     public double calculateBonus(Employee employee) {
         double baseBonus = decoratedBonus.calculateBonus(employee);
 
-
-        return 0;
+        if (employee.isTeamLeader()) {
+            return baseBonus + BONUS;
+        } else {
+            return baseBonus;
+        }
     }
 }
