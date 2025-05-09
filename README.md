@@ -15,3 +15,7 @@ Firma heißt C. Stingy von Geiz GmbH & Co. KG
 - SickDayBonus: von 0 bis 5 - 10 Euro Bonus, 5 bis 10 - 5 Euro Bonus
 - Performance: Rating auf Skala von 0 bis 10. 0 bis 3 - Faktor 0,5, 4 bis 7 - Faktor 1, von 8 bis 10 - Faktor 1,1
 - Minimaler Bonus: 10, Maximaler Bonus: 1000
+
+## Ablauf
+Während der Entwicklung haben wir festgestellt, dass wir unser Klassendiagramm falsch konzipiert haben. Wir haben die konkrete Bonusklassen nicht von der abtrakten Klasse abgeleitet.
+Wir haben ein neues, richtiges Diagramm `BonusCalculator-v2.drawio.png` erstellt und den Code entspechend angepasst. 
