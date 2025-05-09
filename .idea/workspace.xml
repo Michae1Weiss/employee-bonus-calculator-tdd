@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b6d602-6b75-4873-8496-df0c539fe39c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/ProjectCompletionBonusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/ProjectCompletionBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/ProjectCompletionBonus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProjectCompletionBonusDecoratorTest">
+  <component name="RunManager" selected="JUnit.ProjectCompletionBonusTest">
     <configuration name="BasicBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
@@ -66,7 +67,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectCompletionBonusDecoratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProjectCompletionBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +76,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.ProjectCompletionBonusDecoratorTest" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.ProjectCompletionBonusTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,7 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProjectCompletionBonusDecoratorTest" />
+        <item itemvalue="JUnit.ProjectCompletionBonusTest" />
         <item itemvalue="JUnit.SeniorityBonusTest.shouldAddSeniorityBonusBasedOnYearsOfService" />
         <item itemvalue="JUnit.BasicBonusTest" />
       </list>
