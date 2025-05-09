@@ -19,7 +19,7 @@ class BasicBonusTest {
                 .isTeamLeader(false)
                 .build();
 
-        // When
+        // WhenEd
         double bonus = basicBonus.calculateBonus(employee);
 
         // Then
