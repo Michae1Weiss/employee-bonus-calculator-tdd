@@ -5,7 +5,7 @@ import de.szut.bonuscalculator.model.Employee;
 public class ProjectCompletionBonus extends BonusDecorator {
     private static final double BONUS_PER_PROJECT = 10.0;
 
-    protected ProjectCompletionBonus(Bonus decoratedBonus) {
+    public ProjectCompletionBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
     }
 

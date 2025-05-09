@@ -5,7 +5,7 @@ import de.szut.bonuscalculator.model.Employee;
 public class TeamLeaderBonus extends BonusDecorator {
     private static final double BONUS = 20.0;
 
-    protected TeamLeaderBonus(Bonus decoratedBonus) {
+    public TeamLeaderBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
     }
 

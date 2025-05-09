@@ -8,7 +8,7 @@ public class SickDayBonus extends BonusDecorator {
     private static final int TIER_1_MAX = 5;
     private static final int TIER_2_MAX = 10;
 
-    protected SickDayBonus(Bonus decoratedBonus) {
+    public SickDayBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
     }
 

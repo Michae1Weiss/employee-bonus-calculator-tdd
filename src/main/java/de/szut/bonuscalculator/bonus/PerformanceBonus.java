@@ -9,7 +9,7 @@ public class PerformanceBonus extends BonusDecorator {
     private static final int LOW_MAX = 3;
     private static final int MID_MAX = 7;
 
-    protected PerformanceBonus(Bonus decoratedBonus) {
+    public PerformanceBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
     }
 

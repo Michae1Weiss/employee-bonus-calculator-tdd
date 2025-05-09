@@ -7,7 +7,7 @@ public class SeniorityBonus extends BonusDecorator {
     private static final int YEARS_THRESHOLD = 10;
     private static final int ADDITIONAL_RATE = 10;
 
-    protected SeniorityBonus(Bonus decoratedBonus) {
+    public SeniorityBonus(Bonus decoratedBonus) {
         super(decoratedBonus);
     }
 
