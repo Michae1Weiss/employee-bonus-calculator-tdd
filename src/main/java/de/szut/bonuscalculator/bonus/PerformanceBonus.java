@@ -1,4 +1,10 @@
 package de.szut.bonuscalculator.bonus;
 
-public class PerformanceBonus {
+import de.szut.bonuscalculator.model.Employee;
+
+public class PerformanceBonus implements Bonus{
+    @Override
+    public double calculateBonus(Employee employee) {
+        return 0;
+    }
 }
