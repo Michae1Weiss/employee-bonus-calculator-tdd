@@ -3,6 +3,7 @@ package de.szut.bonuscalculator.bonus;
 import de.szut.bonuscalculator.model.Employee;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 public class PerformanceBonusTest {
@@ -34,5 +35,21 @@ public class PerformanceBonusTest {
         assertThat(bonus3).isEqualTo(1100.0); // 1000 * 1.1
 
         verify(wrappedComponent, times(3)).calculateBonus(any(Employee.class));
+    }
+
+    @Test
+    void shouldThrowExceptionForNullEmployee() {
+        // Given
+        Bonus performanceBonus = new PerformanceBonus(new BasicBonus());
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> performanceBonus.calculateBonus(null));
+    }
+
+    @Test
+    void shouldThrowExceptionForPerformanceRatingBelowZero() {
+        // Given
+        Bonus performanceBonus = new PerformanceBonus(new BasicBonus());
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> performanceBonus.calculateBonus(Employee.builder().performanceRating(-1).build()));
     }
 }
