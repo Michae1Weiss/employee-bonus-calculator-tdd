@@ -49,5 +49,7 @@ public class TeamLeaderBonusTest {
                 .isThrownBy(() -> {
                     decorator.calculateBonus(null);
                 }).withMessageContaining("Employee cannot be null");
+
+        verify(wrappedComponent, times(0)).calculateBonus(any(Employee.class));
     }
 }

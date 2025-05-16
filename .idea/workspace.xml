@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53b6d602-6b75-4873-8496-df0c539fe39c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/TeamLeaderBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/TeamLeaderBonus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayDeductionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayDeductionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/TeamLeaderBonusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/TeamLeaderBonusTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeamLeaderBonusTest.givenNull_wennCalculateBonus_thenIllegalArgumentException">
+  <component name="RunManager" selected="JUnit.SickDayDeductionTest.given265SickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException">
     <configuration name="All in employee-bonus-calculator-tdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,32 +61,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BonusCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SickDayDeductionTest.given265SickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.service.*" />
+          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.service" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.service.BonusCalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SickDayDeductionTest" />
+      <option name="METHOD_NAME" value="given265SickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BonusServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SickDayDeductionTest.givenNegativeSickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.service.*" />
+          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.service" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.service.BonusServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SickDayDeductionTest" />
+      <option name="METHOD_NAME" value="givenNegativeSickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SickDayDeductionTest.given265SickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" />
+        <item itemvalue="JUnit.SickDayDeductionTest.givenNegativeSickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException" />
         <item itemvalue="JUnit.TeamLeaderBonusTest.givenNull_wennCalculateBonus_thenIllegalArgumentException" />
         <item itemvalue="JUnit.TeamLeaderBonusTest.givenNullTeamleader_wennCalculateBonus_thenIllegalArgumentException" />
         <item itemvalue="JUnit.All in employee-bonus-calculator-tdd" />
-        <item itemvalue="JUnit.BonusServiceTest" />
-        <item itemvalue="JUnit.BonusCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
