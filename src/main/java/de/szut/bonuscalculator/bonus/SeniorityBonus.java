@@ -18,6 +18,9 @@ public class SeniorityBonus extends BonusDecorator {
     }
 
     private double calculateSeniorityBonus(int years) {
+        if (years < 0) {
+            throw new IllegalArgumentException("Years of service must be positive");
+        }
         if (years <= YEARS_THRESHOLD) {
             return years * BASE_RATE_PER_YEAR;
         } else {
