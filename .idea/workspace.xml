@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b6d602-6b75-4873-8496-df0c539fe39c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayBonusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayBonusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayDeductionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/SickDayDeductionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/SickDayBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/szut/bonuscalculator/bonus/SickDayBonus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
