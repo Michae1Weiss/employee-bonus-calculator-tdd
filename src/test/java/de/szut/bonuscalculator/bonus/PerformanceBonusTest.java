@@ -52,4 +52,11 @@ public class PerformanceBonusTest {
         // Then
         assertThrows(IllegalArgumentException.class, () -> performanceBonus.calculateBonus(Employee.builder().performanceRating(-1).build()));
     }
+    @Test
+    void shouldThrowExceptionForPerformanceRatingAboveTen() {
+        // Given
+        Bonus performanceBonus = new PerformanceBonus(new BasicBonus());
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> performanceBonus.calculateBonus(Employee.builder().performanceRating(11).build()));
+    }
 }

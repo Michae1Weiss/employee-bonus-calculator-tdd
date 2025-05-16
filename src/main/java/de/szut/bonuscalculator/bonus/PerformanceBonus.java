@@ -20,7 +20,9 @@ public class PerformanceBonus extends BonusDecorator {
         if (performanceRating < 0) {
             throw new IllegalArgumentException("Performance rating must be positive");
         }
-
+        if (performanceRating > 10) {
+            throw new IllegalArgumentException("Performance rating must be between 0 and 10");
+        }
         if (performanceRating <= LOW_MAX) {
             return baseBonus * LOW_MULTIPLIER;
         } else if (performanceRating <= MID_MAX) {
