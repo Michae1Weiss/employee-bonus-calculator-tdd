@@ -17,6 +17,9 @@ public class PerformanceBonus extends BonusDecorator {
     public double calculateBonus(Employee employee) {
         double baseBonus = decoratedBonus.calculateBonus(employee);
         int performanceRating = employee.getPerformanceRating();
+        if (performanceRating < 0) {
+            throw new IllegalArgumentException("Performance rating must be positive");
+        }
 
         if (performanceRating <= LOW_MAX) {
             return baseBonus * LOW_MULTIPLIER;
