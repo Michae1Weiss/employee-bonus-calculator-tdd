@@ -51,7 +51,7 @@ public class TeamLeaderBonusTest {
         // When
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> {
-                    double bonusNonTeamLeader = decorator.calculateBonus(teamLeader);
+                    double _ = decorator.calculateBonus(teamLeader);
                 }).withMessageContaining("isTeamLeader boolean is null");
 
         verify(wrappedComponent, times(1)).calculateBonus(any(Employee.class));
