@@ -50,7 +50,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeamLeaderBonusTest.givenNullTeamleader_wennCalculateBonus_thenIllegalArgumentException">
+  <component name="RunManager" selected="JUnit.TeamLeaderBonusTest.givenNull_wennCalculateBonus_thenIllegalArgumentException">
     <configuration name="All in employee-bonus-calculator-tdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,21 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerformanceBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employee-bonus-calculator-tdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.PerformanceBonusTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TeamLeaderBonusTest.givenNullTeamleader_wennCalculateBonus_thenIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
@@ -120,13 +105,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeamLeaderBonusTest.givenNull_wennCalculateBonus_thenIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employee-bonus-calculator-tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.TeamLeaderBonusTest" />
+      <option name="METHOD_NAME" value="givenNull_wennCalculateBonus_thenIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamLeaderBonusTest.givenNull_wennCalculateBonus_thenIllegalArgumentException" />
         <item itemvalue="JUnit.TeamLeaderBonusTest.givenNullTeamleader_wennCalculateBonus_thenIllegalArgumentException" />
         <item itemvalue="JUnit.All in employee-bonus-calculator-tdd" />
         <item itemvalue="JUnit.BonusServiceTest" />
         <item itemvalue="JUnit.BonusCalculatorTest" />
-        <item itemvalue="JUnit.PerformanceBonusTest" />
       </list>
     </recent_temporary>
   </component>
