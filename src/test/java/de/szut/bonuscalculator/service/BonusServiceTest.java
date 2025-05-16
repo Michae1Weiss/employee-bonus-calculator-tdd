@@ -43,4 +43,5 @@ class BonusServiceTest {
         // Then
         assertThat(adjustedBonus).isEqualTo(500.0);
     }
+
 }

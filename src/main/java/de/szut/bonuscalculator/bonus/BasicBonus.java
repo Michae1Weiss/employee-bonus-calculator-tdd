@@ -7,6 +7,9 @@ public class BasicBonus implements Bonus {
 
     @Override
     public double calculateBonus(Employee employee) {
+        if (employee == null) {
+            throw new IllegalArgumentException("Employee must not be null");
+        }
         return BASIC_BONUS_AMOUNT;
     }
 }

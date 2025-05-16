@@ -3,6 +3,7 @@ package de.szut.bonuscalculator.bonus;
 import de.szut.bonuscalculator.model.Employee;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class BasicBonusTest {
 
@@ -24,5 +25,14 @@ class BasicBonusTest {
 
         // Then
         assertThat(bonus).isEqualTo(500.0);
+    }
+
+    @Test
+    void shouldThrowExceptionForNullEmployee() {
+        // Given
+        Bonus basicBonus = new BasicBonus();
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> basicBonus.calculateBonus(null));
+
     }
 }
