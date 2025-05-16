@@ -38,7 +38,7 @@ public class SickDayDeductionTest {
     }
 
     @Test
-    void givenNull_whenCalculateSichDayDeduction_thenIllegalArgumentException() {
+    void givenNull_whenCalculateSickDayDeduction_thenIllegalArgumentException() {
         // Given
         Bonus wrappedComponent = mock(Bonus.class);
         when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
@@ -53,7 +53,7 @@ public class SickDayDeductionTest {
     }
 
     @Test
-    void givenNegativeSickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException() {
+    void givenNegativeSickDays_whenCalculateSickDayDeduction_thenIllegalArgumentException() {
         // Given
         Bonus wrappedComponent = mock(Bonus.class);
         when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
@@ -70,7 +70,7 @@ public class SickDayDeductionTest {
     }
 
     @Test
-    void given265SickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException() {
+    void given266SickDays_whenCalculateSickDayDeduction_thenIllegalArgumentException() {
         // Given
         Bonus wrappedComponent = mock(Bonus.class);
         when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
