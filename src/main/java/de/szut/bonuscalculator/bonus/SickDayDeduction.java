@@ -14,6 +14,16 @@ public class SickDayDeduction extends BonusDecorator {
 
     @Override
     public double calculateBonus(Employee employee) {
+        if (employee == null) {
+            throw new IllegalArgumentException("Employee cannot be null");
+        }
+
+        if (employee.getSickDays() > 265) {
+            throw new IllegalArgumentException("sickDays cannot be > 265");
+        } else if (employee.getSickDays() < 0) {
+            throw new IllegalArgumentException("sickDays cannot be < 0");
+        }
+
         double baseBonus = decoratedBonus.calculateBonus(employee);
         int sickDays = employee.getSickDays();
 

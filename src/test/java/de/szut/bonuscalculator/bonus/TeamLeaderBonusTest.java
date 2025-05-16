@@ -3,6 +3,7 @@ package de.szut.bonuscalculator.bonus;
 import de.szut.bonuscalculator.model.Employee;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
 import static org.mockito.Mockito.*;
 
 public class TeamLeaderBonusTest {
@@ -33,5 +34,22 @@ public class TeamLeaderBonusTest {
         assertThat(bonusNonTeamLeader).isEqualTo(500.0); // unverändert
 
         verify(wrappedComponent, times(2)).calculateBonus(any(Employee.class));
+    }
+
+    @Test
+    void givenNull_wennCalculateBonus_thenIllegalArgumentException() {
+        // Given
+        Bonus wrappedComponent = mock(Bonus.class);
+        when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
+
+        Bonus decorator = new TeamLeaderBonus(wrappedComponent);
+
+        // When
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> {
+                    decorator.calculateBonus(null);
+                }).withMessageContaining("Employee cannot be null");
+
+        verify(wrappedComponent, times(0)).calculateBonus(any(Employee.class));
     }
 }
