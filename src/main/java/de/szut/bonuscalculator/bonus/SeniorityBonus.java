@@ -21,6 +21,9 @@ public class SeniorityBonus extends BonusDecorator {
         if (years < 0) {
             throw new IllegalArgumentException("Years of service must be positive");
         }
+        if (years >= 100) {
+            throw new IllegalArgumentException("Years of service must not exceed 100");
+        }
         if (years <= YEARS_THRESHOLD) {
             return years * BASE_RATE_PER_YEAR;
         } else {

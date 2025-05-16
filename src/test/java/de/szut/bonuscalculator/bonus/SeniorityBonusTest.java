@@ -45,4 +45,11 @@ public class SeniorityBonusTest {
         // Then
         assertThrows(IllegalArgumentException.class, () -> seniorityBonus.calculateBonus(Employee.builder().yearsOfService(-1).build()));
     }
+    @Test
+    void shouldThrowExceptionForYearsOfServiceAboveOneHundred() {
+        // Given
+        Bonus seniorityBonus = new SeniorityBonus(new BasicBonus());
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> seniorityBonus.calculateBonus(Employee.builder().yearsOfService(100).build()));
+    }
 }
