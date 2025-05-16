@@ -11,6 +11,14 @@ public class BonusCalculator {
         this.bonusService = bonusService;
     }
 
+    /**
+     * Calculates the total bonus for the given employee.
+     * Applies multiple bonus rules and enforces bonus limits.
+     *
+     * @param employee the employee whose bonus is being calculated
+     * @return the final bonus after applying all rules and restrictions
+     * @throws IllegalArgumentException if the employee is null
+     */
     public double calculateTotalBonus(Employee employee) {
         Bonus bonus = createBonusChain();
         double calculatedBonus = bonus.calculateBonus(employee);
@@ -18,6 +26,11 @@ public class BonusCalculator {
         return bonusService.applyRestrictions(calculatedBonus);
     }
 
+    /**
+     * Builds the full bonus calculation chain using the decorator pattern.
+     *
+     * @return the composed Bonus object representing the full calculation logic
+     */
     private Bonus createBonusChain() {
         // Grundbonus als Basis
         Bonus bonus = new BasicBonus();
