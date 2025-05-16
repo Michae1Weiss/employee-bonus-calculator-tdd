@@ -11,6 +11,10 @@ public class TeamLeaderBonus extends BonusDecorator {
 
     @Override
     public double calculateBonus(Employee employee) {
+        if (employee == null) {
+            throw new IllegalArgumentException("Employee cannot be null");
+        }
+
         double baseBonus = decoratedBonus.calculateBonus(employee);
 
         if (employee.isTeamLeader()) {

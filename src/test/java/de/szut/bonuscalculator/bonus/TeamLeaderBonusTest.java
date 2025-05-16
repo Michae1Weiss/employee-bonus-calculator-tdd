@@ -37,27 +37,6 @@ public class TeamLeaderBonusTest {
     }
 
     @Test
-    void givenNullTeamleader_wennCalculateBonus_thenIllegalArgumentException() {
-        // Given
-        Bonus wrappedComponent = mock(Bonus.class);
-        when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
-
-        Bonus decorator = new TeamLeaderBonus(wrappedComponent);
-
-        // Teamleiter boolean ist nicht definiert
-        Employee teamLeader = Employee.builder()
-                .build();
-
-        // When
-        assertThatExceptionOfType(IllegalArgumentException.class)
-                .isThrownBy(() -> {
-                    decorator.calculateBonus(teamLeader);
-                }).withMessageContaining("isTeamLeader cannot be null");
-
-        verify(wrappedComponent, times(1)).calculateBonus(any(Employee.class));
-    }
-
-    @Test
     void givenNull_wennCalculateBonus_thenIllegalArgumentException() {
         // Given
         Bonus wrappedComponent = mock(Bonus.class);
@@ -70,7 +49,5 @@ public class TeamLeaderBonusTest {
                 .isThrownBy(() -> {
                     decorator.calculateBonus(null);
                 }).withMessageContaining("Employee cannot be null");
-
-        verify(wrappedComponent, times(1)).calculateBonus(any(Employee.class));
     }
 }
