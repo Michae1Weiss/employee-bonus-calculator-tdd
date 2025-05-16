@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b6d602-6b75-4873-8496-df0c539fe39c" name="Changes" comment="added .idea in gitignore">
+    <list default="true" id="53b6d602-6b75-4873-8496-df0c539fe39c" name="Changes" comment="added SeniorityBonusTest when years of Service exceeds 99 years">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/PerformanceBonusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/bonus/PerformanceBonusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/service/BonusServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/szut/bonuscalculator/service/BonusServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,12 @@
     "JUnit.BasicBonusTest.shouldThrowExceptionForNullEmployee.executor": "Run",
     "JUnit.PerformanceBonusTest.executor": "Run",
     "JUnit.PerformanceBonusTest.shouldThrowExceptionForNullEmployee.executor": "Run",
+    "JUnit.PerformanceBonusTest.shouldThrowExceptionForPerformanceRatingAboveTen.executor": "Run",
     "JUnit.PerformanceBonusTest.shouldThrowExceptionForPerformanceRatingBelowZero.executor": "Run",
+    "JUnit.SeniorityBonusTest.executor": "Run",
+    "JUnit.SeniorityBonusTest.shouldThrowExceptionForNullEmployee.executor": "Run",
+    "JUnit.SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceAboveOneHundred.executor": "Run",
+    "JUnit.SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceBelowZero.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -69,38 +74,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PerformanceBonusTest.shouldThrowExceptionForPerformanceRatingBelowZero">
-    <configuration name="BasicBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employee-bonus-calculator-tdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.BasicBonusTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasicBonusTest.shouldThrowExceptionForNullEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="employee-bonus-calculator-tdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.BasicBonusTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionForNullEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SeniorityBonusTest">
     <configuration name="PerformanceBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
@@ -116,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerformanceBonusTest.shouldThrowExceptionForNullEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeniorityBonusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +99,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.PerformanceBonusTest" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SeniorityBonusTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeniorityBonusTest.shouldThrowExceptionForNullEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employee-bonus-calculator-tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SeniorityBonusTest" />
       <option name="METHOD_NAME" value="shouldThrowExceptionForNullEmployee" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerformanceBonusTest.shouldThrowExceptionForPerformanceRatingBelowZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceAboveOneHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="employee-bonus-calculator-tdd" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +130,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
-      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.PerformanceBonusTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionForPerformanceRatingBelowZero" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SeniorityBonusTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionForYearsOfServiceAboveOneHundred" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceBelowZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employee-bonus-calculator-tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.szut.bonuscalculator.bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.szut.bonuscalculator.bonus" />
+      <option name="MAIN_CLASS_NAME" value="de.szut.bonuscalculator.bonus.SeniorityBonusTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionForYearsOfServiceBelowZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PerformanceBonusTest.shouldThrowExceptionForPerformanceRatingBelowZero" />
+        <item itemvalue="JUnit.SeniorityBonusTest" />
+        <item itemvalue="JUnit.SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceAboveOneHundred" />
+        <item itemvalue="JUnit.SeniorityBonusTest.shouldThrowExceptionForYearsOfServiceBelowZero" />
+        <item itemvalue="JUnit.SeniorityBonusTest.shouldThrowExceptionForNullEmployee" />
         <item itemvalue="JUnit.PerformanceBonusTest" />
-        <item itemvalue="JUnit.PerformanceBonusTest.shouldThrowExceptionForNullEmployee" />
-        <item itemvalue="JUnit.BasicBonusTest" />
-        <item itemvalue="JUnit.BasicBonusTest.shouldThrowExceptionForNullEmployee" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +204,63 @@
       <option name="project" value="LOCAL" />
       <updated>1747385113708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Exception for null employee in PerformanceBonus">
+      <option name="closed" value="true" />
+      <created>1747385618127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747385618127</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added .idea/workspace.xml in gitignore">
+      <option name="closed" value="true" />
+      <created>1747385727080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747385727080</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added Test PerformanceBonus below zero">
+      <option name="closed" value="true" />
+      <created>1747385853623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747385853623</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added Test PerformanceBonus over Ten">
+      <option name="closed" value="true" />
+      <created>1747386292750</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747386292750</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added SeniorityBonusTest when employee is null">
+      <option name="closed" value="true" />
+      <created>1747386498297</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747386498297</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added SeniorityBonusTest when years of Service below zero">
+      <option name="closed" value="true" />
+      <created>1747386691062</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747386691062</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added SeniorityBonusTest when years of Service exceeds 99 years">
+      <option name="closed" value="true" />
+      <created>1747387151444</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747387151444</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +281,13 @@
     <MESSAGE value="added workspace.xml" />
     <MESSAGE value="added exception for null employee at basicbonus" />
     <MESSAGE value="added .idea in gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .idea in gitignore" />
+    <MESSAGE value="added Exception for null employee in PerformanceBonus" />
+    <MESSAGE value="added .idea/workspace.xml in gitignore" />
+    <MESSAGE value="added Test PerformanceBonus below zero" />
+    <MESSAGE value="added Test PerformanceBonus over Ten" />
+    <MESSAGE value="added SeniorityBonusTest when employee is null" />
+    <MESSAGE value="added SeniorityBonusTest when years of Service below zero" />
+    <MESSAGE value="added SeniorityBonusTest when years of Service exceeds 99 years" />
+    <option name="LAST_COMMIT_MESSAGE" value="added SeniorityBonusTest when years of Service exceeds 99 years" />
   </component>
 </project>
