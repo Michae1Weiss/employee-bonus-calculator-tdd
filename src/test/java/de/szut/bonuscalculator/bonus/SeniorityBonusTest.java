@@ -3,6 +3,7 @@ package de.szut.bonuscalculator.bonus;
 import de.szut.bonuscalculator.model.Employee;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 public class SeniorityBonusTest {
@@ -29,5 +30,12 @@ public class SeniorityBonusTest {
         assertThat(bonus2).isEqualTo(640.0); // 500 + 140
 
         verify(wrappedComponent, times(2)).calculateBonus(any(Employee.class));
+    }
+    @Test
+    void shouldThrowExceptionForNullEmployee() {
+        // Given
+        Bonus seniorityBonus = new SeniorityBonus(new BasicBonus());
+        // Then
+        assertThrows(IllegalArgumentException.class, () -> seniorityBonus.calculateBonus(null));
     }
 }
