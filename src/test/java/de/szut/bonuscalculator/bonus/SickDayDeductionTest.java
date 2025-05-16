@@ -38,6 +38,21 @@ public class SickDayDeductionTest {
     }
 
     @Test
+    void givenNull_whenCalculateSichDayDeduction_thenIllegalArgumentException() {
+        // Given
+        Bonus wrappedComponent = mock(Bonus.class);
+        when(wrappedComponent.calculateBonus(any(Employee.class))).thenReturn(500.0);
+
+        Bonus decorator = new SickDayDeduction(wrappedComponent);
+
+        // When
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> {
+                    decorator.calculateBonus(null);
+                }).withMessageContaining("Employee cannot be null");
+    }
+
+    @Test
     void givenNegativeSickDays_whenCalculateSichDayDeduction_thenIllegalArgumentException() {
         // Given
         Bonus wrappedComponent = mock(Bonus.class);
@@ -51,7 +66,7 @@ public class SickDayDeductionTest {
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> {
                     decorator.calculateBonus(employee1);
-                }).withMessageContaining("sickDays cannot be a negative number");
+                }).withMessageContaining("sickDays cannot be < 0");
     }
 
     @Test
